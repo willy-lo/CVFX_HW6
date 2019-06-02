@@ -1,6 +1,8 @@
 # CVFX_HW6
 1.5% (Take videos by yourselves)
 
+以下是我們拍的影片，是投籃沒投進的影片，之後會用威力導演想辦法把球弄進，並把人的周圍加一些東西或記分板等等的效果。
+
 https://www.youtube.com/watch?v=Qb7jmrn1PWs&feature=youtu.be
 
 2.10% (Make these visual effects with ORB-SLAM2)
