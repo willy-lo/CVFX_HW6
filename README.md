@@ -256,6 +256,8 @@ SET_TARGET_PROPERTIES(core PROPERTIESVERSION 1.2 SOVERSION 1)
 
 6.10% (Compare above methods)
 
+我們這組覺得用軟體去做特效比較人性化，ORBSLAM2我們則是先將影片先切成好幾張照片並且利用他連續的特性，寫一個python code去讓他照片每一張加想要的字，所以我覺得自己用軟體去做特效會比較方便!但這個ORBSLAM2的方法我們都覺得很酷，覺得很多特效是我們沒有辦法在短時間內學到的!若有時間再去好好的鑽研其他可以利用的特效去做修改!我們兩個影片用第二個影片來做最終的成果，可以看出第二個效果以及抓feature的能力也比較好，我們得知速度太快的話feature會抓得很糟，如果移動比較慢的話抓feature的效果會好很多!
+
 7.10% (Make some special effects based on the pose information, such as rotating, zooming in or out)
 
 8.5% (Insert a 3D model to your video
