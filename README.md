@@ -25,35 +25,35 @@ https://www.youtube.com/watch?v=yJteCd0uQq0&fbclid=IwAR2AJnZnuRV0t_q0uMo0PcceG72
 
 7.10% (Bonus- Make visual effects with other SLAM methods.)
 
-8.ORB-SLAM2 简介
+8.ORB-SLAM2 簡介
 
 一、摘要
 
-ORB-SLAM是由Raul Mur-Artal，J. M. M. Montiel和Juan D. Tardos于2015年发表在IEEE Transactions on Robotics。项目主页网址为：http://webdiis.unizar.es/~raulmur/orbslam/。 
-  ORB-SLAM是一个基于特征点的实时单目SLAM系统，在大规模的、小规模的、室内室外的环境都可以运行。该系统对剧烈运动也很鲁棒，支持宽基线的闭环检测和重定位，包括全自动初始化。该系统包含了所有SLAM系统共有的模块：跟踪（Tracking）、建图（Mapping）、重定位（Relocalization）、闭环检测（Loop closing）。由于ORB-SLAM系统是基于特征点的SLAM系统，故其能够实时计算出相机的轨线，并生成场景的稀疏三维重建结果。ORB-SLAM2在ORB-SLAM的基础上，还支持标定后的双目相机和RGB-D相机。
+ORB-SLAM是由Raul Mur-Artal，J. M. M. Montiel和Juan D. Tardos于2015年發表在IEEE Transactions on Robotics。項目主頁網址為：http://webdiis.unizar.es/~raulmur/orbslam/。 
+  ORB-SLAM是一個基於特征點的即時單眼SLAM系统，在大規模的、小規模的、室内室外的還境都可以運行。該系统對劇烈運動也很鲁棒，支持寬基線的迴路檢測和重定位，包括全自動初始化。該系统包含了所有SLAM系统共有的模組：追蹤（Tracking）、映射（Mapping）、重新定位（Relocalization）、迴路檢測（Loop closing）。由於ORB-SLAM系统是基於特征點的SLAM系统，故其能夠即時計算出相機的軌跡，並生成場景的稀疏三维重建结果。ORB-SLAM2在ORB-SLAM的基础上，還支持標定後的雙眼相機和RGB-D相機。
 
-二、ORB-SLAM的贡献：
+二、ORB-SLAM的貢獻：
 
 ![image](https://github.com/willy-lo/CVFX_HW6/blob/master/20161114115026626)
 
-三、系统架构
+三、系統架構
 
-  ORB-SLAM其中的关键点如下图所示： 
+  ORB-SLAM其中的關鍵點如下圖所示： 
   
 ![image](https://github.com/willy-lo/CVFX_HW6/blob/master/20161114115058814)
     
-可以看到ORB-SLAM主要分为三个线程进行，也就是论文中的下图所示的，分别是Tracking、LocalMapping和LoopClosing。ORB-SLAM2的工程非常清晰漂亮，三个线程分别存放在对应的三个文件中，分别是Tracking.cpp、LocalMapping.cpp和LoopClosing.cpp文件中，很容易找到。 
+可以看到ORB-SLAM主要分為三個流程進行，也就是文中的下圖所示，分别是Tracking、LocalMapping和LoopClosing。ORB-SLAM2的工程非常清晰漂亮，三個流程分别存放在對應的三個文件中，分别是Tracking.cpp、LocalMapping.cpp和LoopClosing.cpp文件中，很容易找到。 
 
 ![image](https://github.com/willy-lo/CVFX_HW6/blob/master/20161114115114018)
 
-（1）跟踪（Tracking） 
-  这一部分主要工作是从图像中提取ORB特征，根据上一帧进行姿态估计，或者进行通过全局重定位初始化位姿，然后跟踪已经重建的局部地图，优化位姿，再根据一些规则确定新的关键帧。
+（1）追蹤（Tracking） 
+  這一部分主要工作是從圖像中提取ORB特征，根據上一帧進行型態估計，或者進行通過全局重定位初始化位子，然后跟踪已经重建的局部地圖，優化位子，再根據一些規則確定新的關鍵帧。
 
-（2）建图（LocalMapping） 
-  这一部分主要完成局部地图构建。包括对关键帧的插入，验证最近生成的地图点并进行筛选，然后生成新的地图点，使用局部捆集调整（Local BA），最后再对插入的关键帧进行筛选，去除多余的关键帧。
+（2）建圖（LocalMapping） 
+  這一部分主要完成局部地圖构建。包括對關鍵帧的插入，驗證最近生成的地图點並進行篩選，然後生成新的地圖點，使用局部調整（Local BA），最後再對插入的關鍵帧进行篩選，去除多於的關鍵帧。
 
-（3）闭环检测（LoopClosing） 
-  这一部分主要分为两个过程，分别是闭环探测和闭环校正。闭环检测先使用WOB进行探测，然后通过Sim3算法计算相似变换。闭环校正，主要是闭环融合和Essential Graph的图优化。
+（3）迴路檢測（LoopClosing） 
+  這一部分主要分為两個過程，分别是迴路檢測和迴路校正。迴路检测先使用WOB进行探测，然后通过Sim3算法計算相似變换。迴路校正，主要是迴路融合和Essential Graph的圖優化。
 
 
 9.這次我們在環境上出了很多問題，所以將cmake的內容放上來讓大家參考，或許對解決環境的問題有更深入的了解
