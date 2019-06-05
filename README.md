@@ -260,6 +260,14 @@ SET_TARGET_PROPERTIES(core PROPERTIESVERSION 1.2 SOVERSION 1)
 
 7.10% (Make some special effects based on the pose information, such as rotating, zooming in or out)
 
+這個是做過zooming in的效果
+
+https://www.youtube.com/watch?v=K2I1dC12q2c&feature=youtu.be&fbclid=IwAR02Zfqyo2Fe4AtoyHIEtxcW0dnq6SdUi9AwfkaH9X2fPLWvDCZWP14S0I8
+
 8.5% (Insert a 3D model to your video
 
+https://www.youtube.com/watch?v=Zja6G9tDoAQ&feature=youtu.be&fbclid=IwAR1zjaihMn876H3qT4cwevffbSzIAt7lXruJTIM7ptFTnpMn21kYV6qEJl0
+
 9.10% (Bonus- Make visual effects with other SLAM methods.)
+
+https://www.youtube.com/watch?v=OPaRVZk6BOs
