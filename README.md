@@ -25,7 +25,37 @@ https://www.youtube.com/watch?v=yJteCd0uQq0&fbclid=IwAR2AJnZnuRV0t_q0uMo0PcceG72
 
 7.10% (Bonus- Make visual effects with other SLAM methods.)
 
-8.這次我們在環境上出了很多問題，所以將cmake的內容放上來讓大家參考，或許對解決環境的問題有更深入的了解
+8.ORB-SLAM2 简介
+
+一、摘要
+
+ORB-SLAM是由Raul Mur-Artal，J. M. M. Montiel和Juan D. Tardos于2015年发表在IEEE Transactions on Robotics。项目主页网址为：http://webdiis.unizar.es/~raulmur/orbslam/。 
+  ORB-SLAM是一个基于特征点的实时单目SLAM系统，在大规模的、小规模的、室内室外的环境都可以运行。该系统对剧烈运动也很鲁棒，支持宽基线的闭环检测和重定位，包括全自动初始化。该系统包含了所有SLAM系统共有的模块：跟踪（Tracking）、建图（Mapping）、重定位（Relocalization）、闭环检测（Loop closing）。由于ORB-SLAM系统是基于特征点的SLAM系统，故其能够实时计算出相机的轨线，并生成场景的稀疏三维重建结果。ORB-SLAM2在ORB-SLAM的基础上，还支持标定后的双目相机和RGB-D相机。
+
+二、ORB-SLAM的贡献：
+
+![image](https://github.com/willy-lo/CVFX_HW6/blob/master/20161114115026626)
+
+三、系统架构
+
+  ORB-SLAM其中的关键点如下图所示： 
+  
+  
+  
+可以看到ORB-SLAM主要分为三个线程进行，也就是论文中的下图所示的，分别是Tracking、LocalMapping和LoopClosing。ORB-SLAM2的工程非常清晰漂亮，三个线程分别存放在对应的三个文件中，分别是Tracking.cpp、LocalMapping.cpp和LoopClosing.cpp文件中，很容易找到。 
+
+
+（1）跟踪（Tracking） 
+  这一部分主要工作是从图像中提取ORB特征，根据上一帧进行姿态估计，或者进行通过全局重定位初始化位姿，然后跟踪已经重建的局部地图，优化位姿，再根据一些规则确定新的关键帧。
+
+（2）建图（LocalMapping） 
+  这一部分主要完成局部地图构建。包括对关键帧的插入，验证最近生成的地图点并进行筛选，然后生成新的地图点，使用局部捆集调整（Local BA），最后再对插入的关键帧进行筛选，去除多余的关键帧。
+
+（3）闭环检测（LoopClosing） 
+  这一部分主要分为两个过程，分别是闭环探测和闭环校正。闭环检测先使用WOB进行探测，然后通过Sim3算法计算相似变换。闭环校正，主要是闭环融合和Essential Graph的图优化。
+
+
+9.這次我們在環境上出了很多問題，所以將cmake的內容放上來讓大家參考，或許對解決環境的問題有更深入的了解
 
 一、介紹
 
