@@ -7,7 +7,19 @@ https://www.youtube.com/watch?v=Qb7jmrn1PWs&feature=youtu.be
 
 以下是我們拍的第二個影片，因為第一個影片凍得比較快，導致她籃球或人的feature沒有辦法抓那麼好，所以我們拍了一個更慢的影片。
 
-2.這次我們在環境上出了很多問題，所以將cmake的內容放上來讓大家參考，或許對解決環境的問題有更深入的了解
+2.10% (Make these visual effects with ORB-SLAM2)
+
+3.10% (Make these visual effects with any post-production software)
+
+4.10% (Compare above methods)
+
+5.10% (Make some special effects based on the pose information, such as rotating, zooming in or out)
+
+6.5% (Insert a 3D model to your video
+
+7.10% (Bonus- Make visual effects with other SLAM methods.)
+
+8.這次我們在環境上出了很多問題，所以將cmake的內容放上來讓大家參考，或許對解決環境的問題有更深入的了解
 
 一、介紹
 
@@ -200,15 +212,3 @@ SET_TARGET_PROPERTIES(core PROPERTIESVERSION 1.2 SOVERSION 1)
        TARGET_LINK_LIBRARIES(target library1 <debug | optimized> library2...)
 
 設置要連接庫文件的名稱。
-
-3.10% (Make these visual effects with ORB-SLAM2)
-
-4.10% (Make these visual effects with any post-production software)
-
-5.10% (Compare above methods)
-
-6.10% (Make some special effects based on the pose information, such as rotating, zooming in or out)
-
-7.5% (Insert a 3D model to your video
-
-8.10% (Bonus- Make visual effects with other SLAM methods.)
