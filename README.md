@@ -5,7 +5,9 @@
 
 https://www.youtube.com/watch?v=Qb7jmrn1PWs&feature=youtu.be
 
-以下是我們拍的第二個影片，因為第一個影片凍得比較快，導致她籃球或人的feature沒有辦法抓那麼好，所以我們拍了一個更慢的影片。
+以下是我們拍的第二個影片，因為第一個影片動得比較快，導致她籃球或人的feature沒有辦法抓那麼好，所以我們拍了一個更慢的影片。
+
+https://www.youtube.com/watch?v=H7q0gpGOy38&feature=youtu.be
 
 2.10% (Make these visual effects with ORB-SLAM2)
 
