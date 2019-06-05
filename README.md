@@ -19,15 +19,9 @@ https://www.youtube.com/watch?v=yJteCd0uQq0&fbclid=IwAR2AJnZnuRV0t_q0uMo0PcceG72
 
 第二個影片加的特效:
 
-4.10% (Compare above methods)
+https://www.youtube.com/watch?v=DqMvR3gUSWo&fbclid=IwAR0wwTP9jDa_307gVuxEdVv9JUWMvJ3o64O38Ej_xXkB-R8wfTHQsmiNSO0
 
-5.10% (Make some special effects based on the pose information, such as rotating, zooming in or out)
-
-6.5% (Insert a 3D model to your video
-
-7.10% (Bonus- Make visual effects with other SLAM methods.)
-
-8.ORB-SLAM2 簡介
+4.ORB-SLAM2 簡介
 
 一、摘要
 
@@ -58,7 +52,7 @@ ORB-SLAM是由Raul Mur-Artal，J. M. M. Montiel和Juan D. Tardos于2015年發表
   這一部分主要分為两個過程，分别是迴路檢測和迴路校正。迴路检测先使用WOB进行探测，然后通过Sim3算法計算相似變换。迴路校正，主要是迴路融合和Essential Graph的圖優化。
 
 
-9.這次我們在環境上出了很多問題，所以將cmake的內容放上來讓大家參考，或許對解決環境的問題有更深入的了解
+5.這次我們在環境上出了很多問題，所以將cmake的內容放上來讓大家參考，或許對解決環境的問題有更深入的了解
 
 一、介紹
 
@@ -251,3 +245,11 @@ SET_TARGET_PROPERTIES(core PROPERTIESVERSION 1.2 SOVERSION 1)
        TARGET_LINK_LIBRARIES(target library1 <debug | optimized> library2...)
 
 設置要連接庫文件的名稱。
+
+6.10% (Compare above methods)
+
+7.10% (Make some special effects based on the pose information, such as rotating, zooming in or out)
+
+8.5% (Insert a 3D model to your video
+
+9.10% (Bonus- Make visual effects with other SLAM methods.)
