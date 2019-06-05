@@ -40,10 +40,11 @@ ORB-SLAM是由Raul Mur-Artal，J. M. M. Montiel和Juan D. Tardos于2015年发表
 
   ORB-SLAM其中的关键点如下图所示： 
   
-  
-  
+![image](https://github.com/willy-lo/CVFX_HW6/blob/master/20161114115058814)
+    
 可以看到ORB-SLAM主要分为三个线程进行，也就是论文中的下图所示的，分别是Tracking、LocalMapping和LoopClosing。ORB-SLAM2的工程非常清晰漂亮，三个线程分别存放在对应的三个文件中，分别是Tracking.cpp、LocalMapping.cpp和LoopClosing.cpp文件中，很容易找到。 
 
+![image](https://github.com/willy-lo/CVFX_HW6/blob/master/20161114115114018)
 
 （1）跟踪（Tracking） 
   这一部分主要工作是从图像中提取ORB特征，根据上一帧进行姿态估计，或者进行通过全局重定位初始化位姿，然后跟踪已经重建的局部地图，优化位姿，再根据一些规则确定新的关键帧。
