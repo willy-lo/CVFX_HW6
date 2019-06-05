@@ -13,7 +13,7 @@ https://www.youtube.com/watch?v=H7q0gpGOy38&feature=youtu.be
 
 3.10% (Make these visual effects with any post-production software)
 
-第一個影片加得特效
+第一個影片加的特效
 
 https://www.youtube.com/watch?v=yJteCd0uQq0&fbclid=IwAR2AJnZnuRV0t_q0uMo0PcceG725PV-jgPcjphxorijma_tRjNQeZgVPD5g
 
